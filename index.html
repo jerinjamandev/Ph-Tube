@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <title>P H Tube</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+      .active{
+        background-color: red;
+        color: white;
+      }
+    </style>
+</head>
+<body>
+
+  
+   <header>
+    <div class="navbar bg-base-100 shadow-sm lg:px-10">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+
+            </ul>
+          </div>
+         <img src='./Logo.png' alt="">
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <input type="text" placeholder="Search" id="searchInput" class="input input-neutral" />
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn bg-[red]  text-white">Blog</a>
+        </div>
+      </div>
+   </header> 
+
+
+   <section class="mt-6">
+     <div class="flex items-center justify-center gap-5" id="category-btn-section">
+      <button onclick="loadVideo('')" id="all" class=" btn  btn border-[1px]   hover:bg-[#FF1F3D] px-4  hover:text-white">All</button>
+      
+    </div>
+   </section>
+
+   <!-- <section id="loading" class="flex flex-col items-center mt-4">
+    <span class="loading loading-dots loading-xl"></span>
+   </section> -->
+   <section class="mt-10 lg:px-10">
+
+
+    <div id="video-main-section" class="grid grid-cols-3 gap-4">
+
+      
+
+
+       
+
+
+
+    </div>
+
+
+   </section>
+
+   <section>
+    <dialog id="my_modal_1" class="modal">
+      <div class="modal-box" id="show-detials">
+        
+     
+      </div>
+    </dialog>
+   </section>
+
+
+   <script src="./scripts/ph.js"></script>
+</body>
+</html>
